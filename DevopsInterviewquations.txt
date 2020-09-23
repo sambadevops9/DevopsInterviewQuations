@@ -1,0 +1,629 @@
+Best DevOps Interview Questions and
+ Answers
+
+
+Q1) what is DevOps?
+By the name DevOps, it’s very clear that it’s a collaboration of Development as well as Operations. But one should know that DevOps is not a tool, or software or framework, DevOps is a Combination of Tools which helps for the automation of the whole infrastructure.
+DevOps is basically an implementation of Agile methodology on the Development side as well as Operations side.
+
+Q2) why do we need DevOps?
+To fulfil the need of delivering more and faster and better application to meet more and more demands of users, we need DevOps. DevOps helps deployment to happen really fast compared to any other traditional tools.
+
+Q3) Mention the key aspects or principle behind DevOps?
+The key aspects or principle behind DevOps is:
+• Infrastructure as a Code
+• Continuous Integration
+• Continuous Deployment
+• Automation
+• Continuous Monitoring
+• Security
+
+Q4) List out some of the popular tools for DevOps?
+• Git
+• Jenkins
+• Ansible
+• Puppet
+• Nagios
+• Docker
+• ELK (Elasticsearch, Logstash, Kibana)
+
+Q5) what is a version control system?
+Version Control System (VCS) is a software that helps software developers to work together and maintain a complete history of their work.
+Some of the feature of VCS as follows:
+• Allow developers to wok simultaneously
+• Does not allow overwriting on each other changes.
+• Maintain the history of every version.
+There are two types of Version Control Systems:
+1. Central Version Control System, Ex: Git, Bitbucket
+2. Distributed/Decentralized Version Control System, Ex: SVN
+
+Q6) What is Git and explain the difference between Git and SVN?
+Git is a source code management (SCM) tool which handles small as well as large projects with efficiency. It is basically used to store our repositories in remote server such as GitHub.
+      GIT SVN
+Git is a Decentralized Version Control Tool SVN is a Centralized Version Control Tool
+Git contains the local repo as well as the full history of the whole project on all the developers hard drive, so if there is a server outage , you can easily do recovery from your team mates local git repo. SVN relies only on the central server to store all the versions of the project file
+Push and pull operations are fast Push and pull operations are slower compared to Git
+It belongs to 3rd generation Version Control Tool It belongs to 2nd generation Version Control tools
+Client nodes can share the entire repositories on their local system Version history is stored on server-side repository
+Commits can be done offline too Commits can be done only online
+Work are shared automatically by commit Nothing is shared automatically
+
+Q7) what language is used in Git?
+Git is written in C language, and since its written in C language its very fast and reduces the overhead of runtimes.
+
+Q8) what is SubGit?
+SubGit is a tool for migrating SVN to Git. It creates a writable Git mirror of a local or remote Subversion repository and uses both Subversion and Git if you like.
+
+Q9) how can you clone a Git repository via Jenkins?
+First, we must enter the e-mail and user name for your Jenkins system, then switch into your job directory and execute the “git config” command.
+
+Q10)What are the Advantages of Ansible?
+• Agentless, it doesn’t require any extra package/daemons to be installed
+• Very low overhead
+• Good performance
+• Idempotent
+• Very Easy to learn
+• Declarative not procedural
+
+Q11) what’s the use of Ansible?
+Ansible is mainly used in IT infrastructure to manage or deploy applications to remote nodes. Let’s say we want to deploy one application in 100’s of nodes by just executing one command, then Ansible is the one actually coming into the picture but should have some knowledge on Ansible script to understand or execute the same.
+
+Q12) what’s the difference between Ansible Playbook and Roles?
+        Roles    Playbooks
+Roles are reusable subsets of a play. Playbooks contain Plays.
+A set of tasks for accomplishing certain role. Mapps among hosts and roles.
+Example: common, webservers. Example: site.yml, fooservers.yml, webservers.yml.
+
+ Q13) How do I see a list of all the ansible_ variables?
+Ansible by default gathers “facts” about the machines, and these facts can be accessed in Playbooks and in templates. To see a list of all the facts that are available about a machine, you can run the “setup” module as an ad-hoc action:
+Ansible -m setup hostname
+This will print out a dictionary of all the facts that are available for that particular host.
+
+Q14) what is Docker?
+Docker is a containerization technology that packages your application and all its dependencies together in the form of Containers to ensure that your application works seamlessly in any environment.
+
+Q15) what is Docker image?
+Docker image is the source of Docker container. Or in other words, Docker images are used to create containers.
+
+Q16) what is Docker Container?
+Docker Container is the running instance of Docker Image.
+
+Q17) Can we consider DevOps as Agile methodology?
+Of Course, we can!! The only difference between agile methodology and DevOps is that, agile methodology is implemented only for development section and DevOps implements agility on both development as well as operations section.
+
+ Q18) what are the advantages of using Git?
+1. Data redundancy and replication
+2. High availability
+3. Only one. git directory per repository
+4. Superior disk utilization and network performance
+5. Collaboration friendly
+6. Git can use any sort of projects.
+
+Q19) what is kernel?
+A kernel is the lowest level of easily replaceable software that interfaces with the hardware in your computer.
+
+Q20) what is difference between grep -i and grep -v?
+I ignore alphabet difference V accept this value
+ex) ls | grep -i docker
+Dockerfile
+docker.tar.gz
+ls | grep -v docker
+Desktop
+Dockerfile
+Documents
+Downloads
+You can’t see anything with name docker.tar.gz
+
+Q21) How can you define particular space to the file
+This feature is generally used to give the swap space to the server. Lets say in below machine I have to create swap space of 1GB then,
+dd if=/dev/zero of=/swapfile1 bs=1G count=1
+
+ Q22) what is concept of sudo in linux?
+Sudo(superuser do) is a utility for UNIX- and Linux-based systems that provides an     efficient way to give specific users permission to use specific system commands at the root (most powerful) level of the system.
+
+ Q23) what is a Jenkins Pipeline?
+Jenkins Pipeline (or simply “Pipeline”) is a suite of plugins which supports implementing and integrating continuous delivery pipelines into Jenkins.
+
+ Q24) How to stop and restart the Docker container?
+To stop the container: docker stop container ID
+Now to restart the Docker container: docker restart container ID
+
+Q25) What platforms does Docker run on?
+Docker runs on only Linux and Cloud platforms:
+• Ubuntu 12.04 LTS+
+• Fedora 20+
+• RHEL 6.5+
+• CentOS 6+
+• Gentoo
+• ArchLinux
+• openSUSE 12.3+
+• CRUX 3.0+
+Cloud:
+• Amazon EC2
+• Google Compute Engine
+• Microsoft Azure
+• Rackspace
+Note that Docker does not run on Windows or Mac for production as there is no support, yes you can use it for testing purpose even in windows
+
+ Q26) what are the tools used for docker networking?
+For docker networking we generally use kubernets and docker swarm.
+
+ Q27) what is docker compose?
+Lets say you want to run multiple docker container, at that time you have to create the docker compose file and type the command docker-compose up. It will run all the containers mentioned in docker compose file.
+
+Q28) What is Scrum?
+Scrum is basically used to divide your complex software and product development task into smaller chunks, using iterations and incremental practises. Each iteration is of two weeks. Scrum consists of three roles: Product owner, scrum master and Team
+
+Q29) What does the commit object contain?
+Commit object contain the following components:
+It contains a set of files, representing the state of a project at a given point of time reference to parent commit objects
+An SHAI name, a 40-character string that uniquely identifies the commit object (also called as hash).
+
+Q30) Explain the difference between git pull and git fetch?
+Git pull command basically pulls any new changes or commits from a branch from your central repository and updates your target branch in your local repository.
+Git fetch is also used for the same purpose, but its slightly different form Git pull. When you trigger a git fetch, it pulls all new commits from the desired branch and stores it in a new branch in your local repository. If we want to reflect these changes in your target branch, git fetch must be followed with a git merge. Our target branch will only be updated after merging the target branch and fetched branch. Just to make it easy for us, remember the equation below:
+Git pull = git fetch + git merge
+
+Q31) How do we know in Git if a branch has already been merged into master?
+git branch –merged
+The above command lists the branches that have been merged into the current branch.
+git branch –no-merged
+this command lists the branches that have not been merged.
+
+Q32) What is ‘Staging Area’ or ‘Index’ in GIT?
+Before committing a file, it must be formatted and reviewed in an intermediate area known as ‘Staging Area’ or ‘Indexing Area’.
+#git add <file_name>
+
+Q33) What is Git Stash?
+Let’s say you’ve been working on part of your project, things are in a messy state and you want to switch branches for some time to work on something else. The problem is, you don’t want to do a commit of your half-done work just, so you can get back to this point later. The answer to this issue is Git stash.
+Git Stashing takes your working directory that is, your modified tracked files and staged changes and saves it on a stack of unfinished changes that you can reapply at any time.
+
+Q34) What is Git stash drop?
+Git ‘stash drop’ command is basically used to remove the stashed item. It will basically remove the last added stash item by default, and it can also remove a specific item if you include it as an argument.
+I have provided an example below:
+If you want to remove any particular stash item from the list of stashed items you can use the below commands:
+git stash list: It will display the list of stashed items as follows:
+stash@{0}: WIP on master: 049d080 added the index file
+stash@{1}: WIP on master: c265351 Revert “added files”
+stash@{2}: WIP on master: 13d80a5 added number to log
+
+Q35) What is the function of ‘git config’?
+Git uses our username to associate commits with an identity. The git config command can be used to change our Git configuration, including your username.
+Suppose you want to give a username and email id to associate commit with an identity so that you can know who has made a commit. For that I will use:
+git config –global user.name “Your Name”: This command will add your username.
+git config –global user.email “Your E-mail Address”: This command will add your email id.
+
+Q36) How can you create a repository in Git?
+To create a repository, you must create a directory for the project if it does not exist, then run command “git init”. By running this command .git directory will be created inside the project directory.
+
+Q37) Describe the branching strategies you have used?
+Generally, they ask this question to understand your branching knowledge
+Feature branching
+This model keeps all the changes for a feature inside of a branch. When the feature branch is fully tested and validated by automated tests, the branch is then merged into master.
+Task branching
+In this task branching model each task is implemented on its own branch with the task key included in the branch name. It is quite easy to see which code implements which task, just look for the task key in the branch name.
+Release branching
+Once the develop branch has acquired enough features for a release, then we can clone that branch to form a Release branch. Creating this release branch starts the next release cycle, so no new features can be added after this point, only bug fixes, documentation generation, and other release-oriented tasks should go in this branch. Once it’s ready to ship, the release gets merged into master and then tagged with a version number. In addition, it should be merged back into develop branch, which may have progressed since the release was initiated earlier.
+
+Q38) What is Jenkins?
+Jenkins is an open source continuous integration tool which is written in Java language. It keeps a track on version control system and to initiate and monitor a build system if any changes occur. It monitors the whole process and provides reports and notifications to alert the concern team.
+
+Q39) What is the difference between Maven, Ant and Jenkins?
+Maven and Ant are Build Technologies whereas Jenkins is a continuous integration(CI/CD) tool.
+
+Q40) Explain what is continuous integration?
+When multiple developers or teams are working on different segments of same web application, we need to perform integration test by integrating all the modules. To do that an automated process for each piece of code is performed on daily bases so that all your code gets tested. And this whole process is termed as continuous integration.
+
+Q41) What is the relation between Hudson and Jenkins?
+Hudson was the earlier name of current Jenkins. After some issue faced, the project name was changed from Hudson to Jenkins.
+
+Q42) What are the advantages of Jenkins?
+Advantage of using Jenkins
+• Bug tracking is easy at early stage in development environment.
+• Provides a very large numbers of plugin support.
+• Iterative improvement to the code, code is basically divided into small sprints.
+• Build failures are cached at integration stage.
+• For each code commit changes an automatic build report notification get generated.
+• To notify developers about build report success or failure, it can be integrated with LDAP mail server.
+• Achieves continuous integration agile development and test-driven development environment.
+• With simple steps, maven release project can also be automated.
+
+Q43) Which SCM tools does Jenkins supports?
+Source code management tools supported by Jenkins are below:
+• AccuRev
+• CVS
+• Subversion
+• Git
+• Mercurial
+• Perforce
+• Clearcase
+• RTC
+
+Q44) What is Ansible?
+Ansible is a software configuration management tool to deploy an application using ssh without     any downtime. It is also used for management and configuration of software applications.  Ansible is developed in Python language.
+
+Q45) How can your setup Jenkins jobs?
+Steps to set up Jenkins job as follows:
+Select new item from the menu.
+After that enter a name for the job (it can be anything) and select free-style job.
+Then click OK to create new job in Jenkins dashboard.
+The next page enables you to configure your job, and it’s done.
+
+Q46) What is your daily activities in your current role?
+• Working on JIRA Tickets
+• Builds and Deployments
+• Resolving issues when builds and deployments fails by coordinating and collaborating with the dev team
+• Infrastructure maintenance
+• Monitoring health of applications
+
+Q47) What are the challenges you faced in recent times?
+I need to implement trending technologies like Docker to automate the configuration management activities in my project by showing POC.
+
+Q48) What are the build and deployment failures you got and how you resolved those?
+I use to get most of the time out of memory issue. So I fixed this issue by restarting the server which is not best practice. I did the permanent fix by increase the Perm Gen Space and Heap Space.
+
+Q49) I want a file that consists of last 10 lines of the some other file?
+Tail -10 filename >filename
+Q50) How to check the exit status of the commands?
+echo $?
+
+Q51) I want to get the information from file which consists of the word “GangBoard”
+grep “GangBoard” filename
+
+Q52) I want to search the files with the name of “GangBoard”
+find / -type f -name “GangBoard”
+
+Q53) Write a shell script to print only prime numbers?
+prime.sh
+echo "1"
+i=3
+j=300
+flag=0
+tem=2
+echo "1"while [ $i -ne $j ]
+do
+        temp=`echo $i`
+        while [ $temp -ne $tem ]
+        do
+                temp=`expr $temp - 1`
+                n=`expr $i % $temp`
+                if [ $n -eq 0 -a $flag -eq 0 ]
+                then
+                        flag=1
+                fi
+        done
+        if [ $flag -eq 0 ]
+        then
+                echo $i
+        else
+                flag=0
+        fi
+        i=`expr $i + 1`
+done
+
+Q54) How to pass the parameters to the script and how can I get those parameters?
+Scriptname.sh parameter1 parameter2
+I will use $* to get the parameters.
+
+Q55) What is the default file permissions for the file and how can I modify it?
+Default file permissions are : rw-r—r—
+If  I want to change the default file permissions I need to use umask command ex: umask 666
+
+Q56) How you will do the releases?
+There are some steps to follow.
+• Create a check list
+• Create a release branch
+• Bump the version
+• Merge release branch to master & tag it.
+• Use a Pull request to merge the release merge
+• Deploy master to Prod Environment
+• Merge back into develop & delete release branch
+• Change log generation
+• Communicating with stack holders
+• Grooming the issue tracker
+
+Q57) How you automate the whole build and release process?
+• Check out a set of source code files.
+• Compile the code and report on progress along the way.
+• Run automated unit tests against successful compiles.
+• Create an installer.
+• Publish the installer to a download site, and notify teams that the installer is available.
+• Run the installer to create an installed executable.
+• Run automated tests against the executable.
+• Report the results of the tests.
+• Launch a subordinate project to update standard libraries.
+• Promote executables and other files to QA for further testing.
+• Deploy finished releases to production environments, such as Web servers or CD manufacturing.
+The above process will be done by Jenkins by creating the jobs.
+
+Q58) I have 50 jobs in the Jenkins dash board , I want to build at a time all the jobs
+In Jenkins there is a plugin called build after other projects build. We can provide job names over there and If one parent job run then it will automatically run the all other jobs. Or we can use Pipe line jobs.
+
+Q59) How can I integrate all the tools with Jenkins?
+I have to navigate to the manage Jenkins and then global tool configurations there you have to provide all the details such as Git URL , Java version, Maven version , Path etc.
+
+Q60) How to install Jenkins via Docker?
+The steps are:
+• Open up a terminal window.
+• Download the jenkinsci/blueocean image & run it as a container in Docker using the following docker run command:( https://docs.docker.com/engine/reference/commandline/run/)
+• docker run \  -u root \  –rm \  -d \  -p 8080:8080 \  -p 50000:50000 \  -v jenkins-data:/var/jenkins_home \  -v /var/run/docker.sock:/var/run/docker.sock \  jenkinsci/blueocean
+• Proceed to the Post-installation setup wizard (https://jenkins.io/doc/book/installing/#setup-wizard)
+• Accessing the Jenkins/Blue Ocean Docker container docker exec -it jenkins-blueocean bash
+• Accessing the Jenkins console log through Docker logsdocker logs <docker-container-name>Accessing the Jenkins home directorydocker exec -it <docker-container-name> bash
+
+Q61) Did you ever participated in Prod Deployments? If yes what is the procedure?
+Yes I have participated, we need to follow the following steps in my point of view
+• Preparation & Planning : What kind of system/technology was supposed to run on what kind of machine
+• The specifications regarding the clustering of systems
+• How all these stand-alone boxes were going to talk to each other in a foolproof manner
+• Production setup should be documented to bits. It needs to be neat, foolproof, and understandable.
+• It should have all a system configurations, IP addresses, system specifications, & installation instructions.
+• It needs to be updated as & when any change is made to the production environment of the system
+
+Q62) My application is not coming up for some reason? How can you bring it up?
+We need to follow the steps
+• Network connection
+• The Web Server is not receiving users’s request
+• Checking the logs
+• Checking the process id’s whether services are running or not
+• The Application Server is not receiving user’s request(Check the Application Server Logs and Processes)
+• A network level ‘connection reset’ is happening somewhere.
+
+Q63) Did you automate anything in your project? Please explain
+Yes I have automated couple of things such as
+•  Password expiry automation
+•  Deleting the older log files
+•  Code quality threshold violations etc.
+
+Q64) What is IaC? How you will achieve this?
+Infrastructure as Code (IaC) is the management of infrastructure (networks, virtual machines, load balancers, and connection topology) in a descriptive model, using the same versioning as DevOps team uses for source code. This  will be achieved by using the tools such as Chef, Puppet and Ansible etc.
+
+Q65) What is multifactor authentication? What is the use of it?
+Multifactor authentication (MFA) is a security system that requires more than one method of authentication from independent categories of credentials to verify the user’s identity for a login or other transaction.
+•  Security for every enterprise user — end & privileged users, internal and external
+•  Protect across enterprise resources — cloud & on-prem apps, VPNs, endpoints, servers, privilege elevation and more
+•  Reduce cost & complexity with an integrated identity platform
+
+Q66) I want to copy the artifacts from one location to another location in cloud. How?
+Create two S3 buckets, one to use as the source, and the other to use as the destination and then create policies.
+
+Q67) How can I modify the commit message in git?
+I have to use following command and enter the required message.
+Git commit –amend
+
+Q68) How can you avoid the waiting time for the triggered jobs in Jenkins.
+First I will check the Slave nodes capacity, If it is fully loaded then I will add the slave node by doing the following process.
+Go to the Jenkins dashboard -> Manage Jenkins ->Manage Nodes
+Create the new node a
+By giving the all required fields and launch the slave machine as you want.
+
+Q69) What are the Pros and Cons of Ansible?
+Pros:
+1. Open Source
+2. Agent less
+3. Improved efficiency , reduce cost
+4. Less Maintenance
+5. Easy to understand yaml files
+Cons:
+1. Underdeveloped GUI with limited features
+2. Increased focus on orchestration over configuration management
+3. SSH communication slows down in scaled environments
+
+Q70) How you handle the merge conflicts in git?
+Follow the steps
+1. Create Pull request
+2. Modify according to the requirement by sitting with developers
+3. Commit the correct file to the branch
+4. Merge the current branch with master branch.
+
+Q71) I want to delete 10 days older log files. How can I?
+There is a command in unix to achieve this task find <directory_path> -mtime +10 -name “*.log” -exec rm -f {} \; 2>/dev/null
+What is the difference among chef, puppet and ansible?
+ Chef Puppet Ansible
+Interoperability Works Only on Linux/Unix Works Only on Linux/Unix Supports Windows but server should be Linux/Unix
+Conf. Language It uses Ruby Puppet DSL YAML (Python)
+Availability Primary Server and Backup Server Multi Master Architecture Single Active Node
+
+Q72) How you get the Inventory variables defined for the host?
+We need to use the following command
+Ansible – m debug- a “var=hostvars[‘hostname’]” localhost(10.92.62.215)
+
+Q73) How you will take backup for Jenkins?
+Copy  JENKINS_HOME directory and “jobs” directory to replicate it in another server
+
+Q74) How to deploy docker container to aws?
+Amazon provides the service called Amazon Elastic Container Service; By using this creating and configuring the task definition and services we will launch the applications.
+
+Q75) I want to change the default port number of apache tomcat. How?
+Go to the tomcat folder and navigate to the conf folder there you will find a server.xml file. You can change connector port tag as you want.
+
+Q76) In how many ways you can install the Jenkins?
+We can install Jenkins in 3 Ways
+• By downloading Jenkins archive file
+• By running as a service Java –jar Jenkins.war
+• By deploying Jenkins.war to the webapps folder in tomcat.
+
+Q77) How you will run Jenkins job from command line?
+We have a Jenkins CLI from there we need to use the curl command
+curl -X POST -u YOUR_USER:YOUR_USER_PASSWORD http://YOUR_JENKINS_URL/job/YOUR_JOB/build
+
+Q78) How you will do tagging in git?
+We have following command to create tags in git
+Git tag v0.1
+
+Q79) How can you connect a container to a network when it starts?
+We need to use a following command
+docker run -itd –network=multi-host-network busybox
+
+Q80) How you will do code commit and code deploy in cloud?
+• Create a deployment environment
+• Get a copy of the sample code
+• Create your pipeline
+• Activate your pipeline
+• Commit a change and update the App.
+
+Q81) How to access variable names in Ansible?
+Using hostvars method we can access and add the variables like below
+{{ hostvars[inventory_hostname][‘ansible_’ + which_interface][‘ipv4’][‘address’] }}
+
+Q82) What is Infrastructure as Code?
+Where the Configuration of any servers or tool chain or application stack required for an association can be made into progressively elucidating dimension of code and that can be utilized for provisioning and overseeing foundation components like Virtual Machine, Software, Network Elements, however it varies from contents utilizing any language, where they are a progression of static advances coded, where Version control can be utilized so as to follow condition changes .
+Precedent Tools are Ansible, Terraform.
+
+Q83) What are the zones the Version control can acquaint with get proficient DevOps practice?
+A clearly fundamental region of Version Control is Source code the executives, Where each engineer code ought to be pushed to a typical storehouse for keeping up assemble and discharge in CI/CD pipelines.
+Another territory can be Version control For Administrators when they use Infrastructure as A Code (IAC) apparatuses and rehearses for keeping up The Environment setup.
+Another Area of Version Control framework Can be Artifactory Management Using Repositories like Nexus and DockerHub
+
+Q84) Why Opensource apparatuses support DevOps?
+Opensource devices dominatingly utilized by any association which is adjusting (or) embraced DevOps pipelines in light of the fact that devops accompanied an attention on robotization in different parts of association manufacture and discharge and change the executives and furthermore framework the board zones.
+So creating or utilizing a solitary apparatus is unthinkable and furthermore everything is fundamentally an experimentation period of advancement and furthermore coordinated chops down the advantage of building up a solitary device , so opensource devices were accessible available practically spares each reason and furthermore gives association a choice to assess the device dependent on their need.
+
+Q85) What is the distinction among Ansible and chef(or) manikin?
+Ansible is Agentless design the board device, where manikin or gourmet expert needs operator should be kept running on the specialist hub and culinary specialist or manikin depends on draw demonstrate, where your cookbook or show for gourmet expert and manikin separately from the ace will be pulled by the operator and ansible uses ssh to convey and it gives information driven guidelines to the hubs should be overseen , progressively like RPC execution, ansible utilizations YAML scripting, though manikin (or) culinary specialist is worked by ruby uses their own DSL .
+Q86) What is Jinja2 templating in ansible playbooks and their utilization?
+Jinja2 templating is the Python standard for templating , consider it like a sed editorial manager for Ansible , where it very well may be utilized is when there is a requirement for dynamic change of any config record to any application like consider mapping a MySQL application to the IP address of the machine, where it is running, it can’t be static , it needs modifying it progressively at runtime.
+Arrangement
+The vars inside the  supports are supplanted by ansible while running utilizing layout module.
+Q87) What is the requirement for sorting out playbooks as the job, is it vital?
+Arranging playbooks as jobs , gives greater clarity and reusability to any plays , while consider an errand where MySQL establishment ought to be done after the evacuation of Oracle DB , and another prerequisite is expected to introduce MySQL after java establishment, in the two cases we have to introduce MySQL , yet without jobs need to compose playbooks independently for both use cases , yet utilizing jobs once the MySQL establishment job is made can be used any number of times by summoning utilizing rationale in site.yaml .
+No, it isn’t important to make jobs for each situation, however making jobs is the best practice in Ansible.
+Q88) What is the fundamental disservice of Docker holders?
+As the lifetime of any compartments is while pursuing a holder is wrecked you can’t recover any information inside a compartment, the information inside a compartment is lost perpetually, however tenacious capacity for information inside compartments should be possible utilizing volumes mount to an outer source like host machine and any NFS drivers.
+Q89) What are the docker motor and docker form?
+Docker motor contacts the docker daemon inside the machine and makes the runtime condition and procedure for any compartment, docker make connects a few holders to shape as a stack utilized in making application stacks like LAMP, WAMP, XAMP
+Q90) What are the Different modes does a holder can be run?
+Docker holder can be kept running in two modes
+Connected: Where it will be kept running in the forefront of the framework you are running, gives a terminal inside to compartment when – t choice is utilized with it, where each log will be diverted to stdout screen.
+Isolates: This mode is typically kept running underway, where the holder is confined as a foundation procedure and each yield inside a compartment will be diverted log records inside/var/lib/docker/logs/<container-id>/<container-id.json> and which can be seen by docker logs order.
+Q91) What the yield of docker assess order will be?
+Docker examines <container-id> will give yield in JSON position, which contains subtleties like the IP address of the compartment inside the docker virtual scaffold and volume mount data and each other data identified with host (or) holder explicit like the basic document driver utilized, log driver utilized.
+docker investigate [OPTIONS] NAME|ID [NAME|ID…] Choices
+• Name, shorthand Default Description
+• group, – f Format the yield utilizing the given Go layout
+• measure, – s Display all out document sizes if the sort is the compartment
+• type Return JSON for a predefined type
+Q92) What is the order can be utilized to check the asset usage by docker holders?
+Docker details order can be utilized to check the asset usage of any docker holder, it gives the yield practically equivalent to Top direction in Linux, it shapes the base for compartment asset observing instruments like a counsel, which gets yield from docker details order.
+docker details [OPTIONS] [CONTAINER…] Choices
+Name, shorthand Default Description
+• all, – a Show all holders (default demonstrates simply running)
+• group Pretty-print pictures utilizing a Go layout
+• no-stream Disable spilling details and just draw the main outcome
+• no-trunc Do not truncate yield
+Q93) How to execute some errand (or) play on localhost just while executing playbooks on various has on an ansible?
+In ansible, there is a module called delegate_to, in this module area give the specific host (or) has where your errands (or) assignment should be run.
+undertakings:
+name: ” Elasticsearch Hitting”
+uri: url=’_search?q=status:new’ headers='{“Content-type”:”application/json”}’ method=GET return_content=yes
+register: yield
+delegate_to: 127.0.0.1
+Q94) What is the distinction among set_fact and vars in ansible?
+Where a set_fact sets the incentive for a factor at one time and stays static, despite the fact that the esteem is very powerful and vars continue changing according to the esteem continues changing for the variable.
+assignments:
+set_fact:
+fact_time: “Truth: ”
+troubleshoot: var=fact_time
+order: rest 2
+troubleshoot: var=fact_time
+assignments:
+name: queries in factors versus queries in realities
+has: localhost
+vars:
+var_time: “Var: ”
+Despite the fact that the query for the date has been utilized in both the cases, wherein the vars are utilized it modifies dependent on an opportunity to time each time executed inside the playbook lifetime. Be that as it may, Fact dependably continues as before once query is finished
+Q95) What is a query in ansible and what are query modules bolstered by ansible?
+Query modules enable access to information in Ansible from outside sources. These modules are assessed on the Ansible control machine and can incorporate perusing the filesystem yet in addition reaching outside information stores and administrations.
+Organization is {lookup{‘<plugin>’,'<source(or)connection_string>’}}
+A portion of the query modules upheld by ansible are
+Document
+pipe
+redis
+jinja layouts
+etcd kv store
+Q96) How might you erase the docker pictures put away at your nearby machine and how might you do it for every one of the pictures without a moment’s delay?
+The direction docker RMI <image-id> can be utilized to erase the docker picture from nearby machine, though a few pictures may should be constrained in light of the fact that the picture might be utilized by some other holder (or) another picture , to erase pictures you can utilize the mix of directions by docker RMI $(docker pictures – q), where docker pictures will give the docker picture names, to get just the ID of docker pictures just , we are utilizing – q switch with docker pictures order.
+Q97) What are the organizers in the Jenkins establishment and their employments?
+JENKINS_HOME – which will be/$JENKINS_USER/.jenkins it is the root envelope of any Jenkins establishment and it contains subfolders each for various purposes.
+employments/ – Folder contains all the data pretty much every one of the occupations arranged in the Jenkins example.
+Inside employments/, you will have the envelope made for each activity and inside those organizers, you will have fabricate organizers as indicated by each form numbers each form will have its log records, which we see in Jenkins web support.
+Modules/ – where all your modules will be recorded.
+Workspace/ – this will be available to hold all the workspace documents like your source code pulled from SCM.
+Q98) What are the approaches to design Jenkins framework?
+Jenkins can be designed in two different ways
+Web: Where there is a choice called design a framework, in their area, you can make all setup changes.
+Manual on filesystem: Where each change should likewise be possible straightforwardly on the Jenkins config.xml document under the Jenkins establishment catalog, after you make changes on the filesystem, you have to restart your Jenkins, either can do it specifically from terminal (or) you can utilize Reload setup from plate under oversee Jenkins menu or you can hit/restart endpoint straightforwardly.
+Q99) What is the job Of HTTP REST API in DevOps?
+As DevOps is absolutely centers around Automating your framework and gives changes over the pipeline to various stages like an every CI/CD pipeline will have stages like form, test, mental soundness test, UAT, Deployment to Prod condition similarly as with each phase there are diverse devices is utilized and distinctive innovation stack is displayed and there should be an approach to incorporate with various instrument for finishing an arrangement toolchain, there comes a requirement for HTTP API , where each apparatus speaks with various devices utilizing API , and even client can likewise utilize SDK to interface with various devices like BOTOX for Python to contact AWS API’s for robotization dependent on occasions , these days its not cluster handling any longer , it is generally occasion driven pipelines
+Q100) What are Micro services, and how they control proficient DevOps rehearses?
+Where In conventional engineering , each application is stone monument application implies that anything is created by a gathering of designers, where it has been sent as a solitary application in numerous machines and presented to external world utilizing load balances, where the micro services implies separating your application into little pieces, where each piece serves the distinctive capacities expected to finish a solitary exchange and by separating , designers can likewise be shaped to gatherings and each bit of utilization may pursue diverse rules for proficient advancement stage, as a result of spry improvement ought to be staged up a bit and each administration utilizes REST API (or) Message lines to convey between another administration.
+So manufacture and arrival of a non-strong form may not influence entire design, rather, some usefulness is lost, that gives the confirmation to productive and quicker CI/CD pipelines and DevOps Practices.
+
+Q101) What are the manners in which that a pipeline can be made in Jenkins?
+There are two different ways of a pipeline can be made in Jenkins
+Scripted Pipelines:
+Progressively like a programming approach
+Explanatory pipelines:
+DSL approach explicitly to make Jenkins pipelines.
+The pipeline ought to be made in Jenkins document and the area can either be in SCM or nearby framework.
+Definitive and Scripted Pipelines are developed on a very basic level in an unexpected way. Definitive Pipeline is a later element of Jenkins Pipeline which:
+gives more extravagant grammatical highlights over Scripted Pipeline language structure, and is intended to make composing and perusing Pipeline code less demanding.
+Q102) What are the Labels in Jenkins and where it tends to be used?
+Similarly as with CI/CD arrangement should be concentrated , where each application in the association can be worked by a solitary CI/CD server , so in association there might be various types of utilization like java, c#,.NET and so forth, likewise with microservices approach your programming stack is inexactly coupled for the task , so you can have Labeled in every hub and select the choice Only assembled employments while name coordinating this hub, so when a manufacture is planned with the mark of the hub present in it, it hangs tight for next agent in that hub to be accessible, despite the fact that there are different agents in hubs.
+Q103) What is the utilization of Blueocean in Jenkins?
+Blue Ocean reconsiders the client experience of Jenkins. Planned from the beginning for Jenkins Pipeline, yet at the same time good with free-form occupations, Blue Ocean diminishes mess and builds lucidity for each individual from the group.
+It gives complex UI to recognize each phase of the pipeline and better pinpointing for issues and extremely rich Pipeline editorial manager for apprentices.
+Q104) What is the callback modules in Ansible, give a few instances of some callback modules?
+Callback modules empower adding new practices to Ansible when reacting to occasions. Of course, callback modules control a large portion of the yield you see when running the direction line programs, however can likewise be utilized to include an extra yield, coordinate with different apparatuses and marshall the occasions to a capacity backend. So at whatever point a play is executed and after it creates a few occasions, that occasions are imprinted onto Stdout screen, so callback module can be put into any capacity backend for log preparing.
+Model callback modules are ansible-logstash, where each playbook execution is brought by logstash in the JSON group and can be incorporated some other backend source like elasticsearch.
+Q105) What are the scripting dialects can be utilized in DevOps?
+As with scripting dialects, the fundamental shell scripting is utilized to construct ventures in Jenkins pipelines and python contents can be utilized with some other devices like Ansible , terraform as a wrapper content for some other complex choice unraveling undertakings in any mechanization as python is more unrivaled in complex rationale deduction than shell contents and ruby contents can likewise be utilized as fabricate ventures in Jenkins.
+Q106) What is Continuous Monitoring and why checking is basic in DevOps?
+DevOps draws out each association capacity of fabricate and discharge cycle to be a lot shorter with an idea of CI/CD, where each change is reflected into generation conditions fastly, so it should be firmly observed to get client input. So the idea of constant checking has been utilized to assess every application execution progressively (at any rate Near Real Time) , where every application is produced with application execution screen specialists perfect and the granular dimension of measurements are taken out like JVM details and even practical savvy measurements inside the application can likewise be spilled out progressively to Agents , which thusly provides for any backend stockpiling and that can be utilized by observing groups in dashboards and cautions to get persistently screen the application.
+Q107) Give a few instances of persistent observing instruments?
+Where numerous persistent observing instruments are accessible in the market, where utilized for an alternate sort of use and sending model
+Docker compartments can be checked by consultant operator, which can be utilized by Elasticsearch to store measurements (or) you can utilize TICK stack (Telegraph, influxdb, Chronograph, Capacitor) for each framework observing in NRT(Near Real Time) and You can utilize Logstash (or) Beats to gather Logs from framework , which thusly can utilize Elasticsearch as Storage Backend can utilize Kibana (or) Grafana as visualizer.
+The framework observing should be possible by Nagios and Icinga.
+Q108) What is docker swarm?
+Gathering of Virtual machines with Docker Engine can be grouped and kept up as a solitary framework and the assets likewise being shared by the compartments and docker swarm ace calendars the docker holder in any of the machines under the bunch as indicated by asset accessibility
+Docker swarm init can be utilized to start docker swarm bunch and docker swarm joins with the ace IP from customer joins the hub into the swarm group.
+Q109) What are Microservices, and how they control productive DevOps rehearses?
+Where In conventional engineering , each application is stone monument application implies that anything is created by a gathering of designers, where it has been conveyed as a solitary application in numerous machines and presented to external world utilizing load balancers, where the microservices implies separating your application into little pieces, where each piece serves the diverse capacities expected to finish a solitary exchange and by separating , engineers can likewise be shaped to gatherings and each bit of utilization may pursue distinctive rules for proficient advancement stage, on account of light-footed improvement ought to be staged up a bit and each administration utilizes REST API (or) Message lines to impart between another administration.
+So manufacture and arrival of a non-hearty variant may not influence entire design, rather, some usefulness is lost, that gives the affirmation to proficient and quicker CI/CD pipelines and DevOps Practices.
+Q110) What are the manners in which that a pipeline can be made in Jenkins?
+There are two different ways of a pipeline can be made in Jenkins
+Scripted Pipelines:
+Progressively like a programming approach
+Explanatory pipelines:
+DSL approach explicitly to make Jenkins pipelines.
+The pipeline ought to be made in Jenkins record and the area can either be in SCM or neighborhood framework.
+Definitive and Scripted Pipelines are developed in a general sense in an unexpected way. Explanatory Pipeline is a later element of Jenkins Pipeline which:
+gives more extravagant linguistic highlights over Scripted Pipeline sentence structure, and is intended to make composing and perusing Pipeline code simpler.
+Q111) What are the Labels in Jenkins and where it very well may be used?
+Likewise with CI/CD arrangement should be incorporated , where each application in the association can be worked by a solitary CI/CD server , so in association there might be various types of use like java, c#,.NET and so forth, similarly as with microservices approach your programming stack is inexactly coupled for the undertaking , so you can have Labeled in every hub and select the alternative Only assembled occupations while mark coordinating this hub, so when a fabricate is booked with the name of the hub present in it, it sits tight for next agent in that hub to be accessible, despite the fact that there are different agents in hubs.
+Q112) What is the utilization of Blueocean in Jenkins?
+Blue Ocean reexamines the client experience of Jenkins. Planned starting from the earliest stage for Jenkins Pipeline, yet at the same time good with free-form occupations, Blue Ocean lessens mess and expands clearness for each individual from the group.
+It gives modern UI to recognize each phase of the pipeline and better pinpointing for issues and rich Pipeline proofreader for fledglings.
+Q113) What is the callback modules in ansible, give a few instances of some callback modules?
+Callback modules empower adding new practices to Ansible when reacting to occasions. As a matter of course, callback modules control the greater part of the yield you see when running the direction line programs, yet can likewise be utilized to include an extra yield, coordinate with different instruments and marshall the occasions to a capacity backend. So at whatever point a play is executed and after it delivers a few occasions, that occasions are imprinted onto Stdout screen, so callback module can be put into any capacity backend for log handling.
+Precedent callback modules are ansible-logstash, where each playbook execution is gotten by logstash in the JSON position and can be incorporated some other backend source like elasticsearch.
+Q114) What are the scripting dialects can be utilized in DevOps?
+As with scripting dialects, the fundamental shell scripting is utilized to assemble ventures in Jenkins pipelines and python contents can be utilized with some other instruments like Ansible.
+Q115) For what reason is each instrument in DevOps is generally has some DSL (Domain Specific Language)?
+Devops is a culture created to address the necessities of lithe procedure, where the advancement rate is quicker ,so sending should coordinate its speed and that needs activities group to arrange and work with dev group, where everything can computerize utilizing content based , however it feels more like tasks group than , it gives chaotic association of any pipelines, more the utilization cases , more the contents should be composed , so there are a few use cases, which will be sufficient to cover the requirements of light-footed are taken and apparatuses are made by that and customization can occur over the device utilizing DSL to mechanize the DevOps practice and Infra the board.
+Q116) What are the mists can be incorporated with Jenkins and what are the utilization cases?
+Jenkins can be coordinated with various cloud suppliers for various use cases like dynamic Jenkins slaves, Deploy to cloud conditions.
+A portion of the cloud can be incorporated are
+• AWS
+• Purplish blue
+• Google Cloud
+• OpenStack
+Q117) What are Docker volumes and what sort of volume ought to be utilized to accomplish relentless capacity?
+Docker volumes are the filesystem mount focuses made by client for a compartment or a volume can be utilized by numerous holders, and there are distinctive sorts of volume mount accessible void dir, Post mount, AWS upheld lbs volume, Azure volume, Google Cloud (or) even NFS, CIFS filesystems, so a volume ought to be mounted to any of the outer drives to accomplish determined capacity, in light of the fact that a lifetime of records inside compartment, is as yet the holder is available and if holder is erased, the information would be lost.
+Q118) What are the Artifacts store can be incorporated with Jenkins?
+Any sort of Artifacts vault can be coordinated with Jenkins, utilizing either shell directions (or) devoted modules, some of them are Nexus, Jfrog.
+Q119) What are a portion of the testing apparatuses that can be coordinated with Jenkins and notice their modules?
+Sonar module – can be utilized to incorporate testing of Code quality in your source code.
+Execution module – this can be utilized to incorporate JMeter execution testing.
+Junit – to distribute unit test reports.
+Selenium module – can be utilized to incorporate with selenium for computerization 
